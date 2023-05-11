@@ -16,7 +16,7 @@ router.get('/', async function (req, res) {
     } else {
       res.status(200).send({
         mentor,
-        message: "Users Data Fetch Successfull!"
+        message: "Mentor Data Fetch Successfull!"
       })
     }
   } catch (error) {

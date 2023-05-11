@@ -13,7 +13,7 @@ router.get('/', async function(req, res) {
     let student = await studentModel.find();
     res.status(200).send({
       student,
-      message:"Users Data Fetch Successfull!"
+      message:"Student Data Fetch Successfull!"
     })
   } catch (error) {
     res.status(500).send({
@@ -99,11 +99,11 @@ router.post('/create', async (req, res) => {
     if (!student) {
       let student = await studentModel.create(req.body)
       res.status(201).send({
-        message: "User create Successfull!"
+        message: "Student create Successfull!"
       })
     }
     else {
-      res.status(400).send({ message: "User Alread Exists!" })
+      res.status(400).send({ message: "Student Alread Exists!" })
     }
 
   } catch (error) {
@@ -126,7 +126,7 @@ router.get('/previous/:name', async (req, res) => {
       if (student) {
         res.status(201).send({
           previousMonter,
-          message: "User get Successfull!"
+          message: "Student get Successfull!"
         })
       }
       else {
