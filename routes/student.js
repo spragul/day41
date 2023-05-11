@@ -140,7 +140,7 @@ router.get('/previous/:name', async (req, res) => {
       if (student) {
         res.status(201).send({
           previousMonter,
-          message: "User get Successfull!"
+          message: "Student get Successfull!"
         })
       }
       else {
