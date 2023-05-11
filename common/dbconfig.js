@@ -1,3 +1,3 @@
-const dbUrl =process.env.Url;
+const dbUrl =process.env.URL;
 
 module.exports={dbUrl}
